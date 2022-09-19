@@ -1,4 +1,4 @@
-package com.knubisoft.utils;
+package com.knubisoft.utils.parser;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -15,6 +15,7 @@ public class JSONParser {
         Table table = parseToTable(inputSource);
         return convertTableToList(table, cls);
     }
+
     private <T> List<T> convertTableToList(Table table, Class<T> cls) {
         List<T> resultList = new ArrayList<>();
         for (int i = 0; i < table.size(); i++) {
@@ -24,6 +25,7 @@ public class JSONParser {
         }
         return resultList;
     }
+
     @SneakyThrows
     private <T> T reflectTableRowToClass(Map<String, String> row, Class<T> cls) {
         T toType = cls.getDeclaredConstructor().newInstance();

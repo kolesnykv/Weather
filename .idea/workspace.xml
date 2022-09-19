@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a14315a9-1b1b-4a33-8d6d-9b9ccbf96329" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/ForecaWeather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/JSONParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/OpenWeather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/Weather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/WeatherPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/foreca/ForecaAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/ninjas/NinjasAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knubisoft/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/ForecaWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/foreca/ForecaWeather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/JSONParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/parser/JSONParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/OpenWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/SimpleWeather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/parser/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/ninjas/NinjasWeather.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Idea-workspace/Check",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -84,6 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1662883874451</updated>
       <workItem from="1662883875815" duration="17509000" />
+      <workItem from="1663232587366" duration="1391000" />
+      <workItem from="1663271003022" duration="15719000" />
     </task>
     <servers />
   </component>
@@ -102,6 +107,15 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/knubisoft/Main.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.knubisoft.utils.Weather" memberName="msx_temp" />

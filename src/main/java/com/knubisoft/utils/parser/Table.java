@@ -1,4 +1,4 @@
-package com.knubisoft.utils;
+package com.knubisoft.utils.parser;
 
 import lombok.RequiredArgsConstructor;
 
