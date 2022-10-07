@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a14315a9-1b1b-4a33-8d6d-9b9ccbf96329" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/possibleApis.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/knubisoft/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/SimpleWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/SimpleWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/foreca/ForecaAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/foreca/ForecaAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/ninjas/NinjasAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knubisoft/utils/ninjas/NinjasAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +83,7 @@
       <workItem from="1663271003022" duration="18977000" />
       <workItem from="1664038997867" duration="27000" />
       <workItem from="1664531837950" duration="9346000" />
-      <workItem from="1665148539198" duration="1504000" />
+      <workItem from="1665148539198" duration="2198000" />
     </task>
     <servers />
   </component>
