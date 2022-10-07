@@ -13,7 +13,8 @@ import java.time.LocalTime;
 @Setter
 
 public class SimpleWeather {
-    String apiName;
+    private String apiName;
+    private String city;
     private int temperature;
     private int feelsLike;
     private int minimalTemperature;

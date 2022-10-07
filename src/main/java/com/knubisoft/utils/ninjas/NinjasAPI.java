@@ -14,8 +14,14 @@ import java.time.LocalTime;
 import java.util.List;
 
 public class NinjasAPI {
+
+    private final String city;
+
+    public NinjasAPI(String city) {
+        this.city = city;
+    }
     @SneakyThrows
-    public NinjasWeather callNinjasAPI(String city) {
+    public NinjasWeather callNinjasAPI() {
         OkHttpClient client = new OkHttpClient();
         String ninjaURL = String.format("https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?&city=%s", city);
 
@@ -27,15 +33,18 @@ public class NinjasAPI {
                 .build();
 
         Response response = client.newCall(request).execute();
+        if(response.code()!=200) {
+            throw new IllegalArgumentException("NinjaAPI cannot find city " + city +" by its name, ensure that city name is correct");
+        }
         List<NinjasWeather> weatherList = new JSONParser().readAll("[" + response.body().string() + "]", NinjasWeather.class);
         return weatherList.get(0);
-
     }
 
     @SneakyThrows
     public SimpleWeather transform(Object instance) {
         SimpleWeather simpleWeatherInstance = new SimpleWeather();
         simpleWeatherInstance.setApiName(instance.getClass().getSimpleName());
+        simpleWeatherInstance.setCity(city);
         for (Field f : instance.getClass().getDeclaredFields()) {
             String name = f.getName();
             switch (name) {

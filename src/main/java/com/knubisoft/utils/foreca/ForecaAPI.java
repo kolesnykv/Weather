@@ -16,8 +16,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ForecaAPI {
+
+    private final String city;
+
+    public ForecaAPI(String city) {
+        this.city = city;
+    }
+
     @SneakyThrows
-    public ForecaWeather callForecaAPI(String city) {
+    public ForecaWeather callForecaAPI() {
         OkHttpClient client = new OkHttpClient();
         String id = findCityId(city, client);
         String forecaUrl = String.format("https://foreca-weather.p.rapidapi.com/current/%s", id) + "?alt=0&tempunit=C&windunit=KMH&tz=Europe%2FLondon&lang=en";
@@ -36,6 +43,7 @@ public class ForecaAPI {
     public SimpleWeather transform(Object instance) {
         SimpleWeather simpleWeatherInstance = new SimpleWeather();
         simpleWeatherInstance.setApiName(instance.getClass().getSimpleName());
+        simpleWeatherInstance.setCity(city);
         for (Field f : instance.getClass().getDeclaredFields()) {
             String name = f.getName();
             switch (name) {
@@ -74,8 +82,11 @@ public class ForecaAPI {
         String bodyWithId = response.body().string();
         Pattern pattern = Pattern.compile("\"id\":\\d+");
         Matcher matcher = pattern.matcher(bodyWithId);
-        matcher.find();
-        String id = matcher.group().split(":")[1];
-        return id;
+        if(matcher.find()) {
+            return matcher.group().split(":")[1];
+        }
+        else {
+            throw new IllegalArgumentException("ForecaApi cant find city "+ city +" by its name, ensure that city name is correct");
+        }
     }
 }
